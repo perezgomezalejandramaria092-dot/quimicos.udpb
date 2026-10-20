@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unidad Educativa Provincia de Bolívar</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 12px;
+    font-family: Arial, sans-serif;
+    background: #edf6fc;
+    color: #17466e;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background: #cce6f8;
+    border: 2px solid #3487c8;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+header h1 {
+    font-size: clamp(18px, 3vw, 28px);
+    margin: 0;
+}
+
+header p {
+    margin: 7px 0 0;
+    color: #28699e;
+    font-style: italic;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 210px minmax(0, 1fr);
+    gap: 12px;
+}
+
+.lateral {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+nav {
+    background: #204f7c;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+nav a {
+    display: block;
+    padding: 12px 9px;
+    margin-bottom: 4px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background: #3988c7;
+}
+
+.social {
+    text-align: center;
+    padding: 14px;
+    background: #dceefa;
+    border-radius: 8px;
+}
+
+.social h3 {
+    margin: 0 0 8px;
+}
+
+.social p {
+    font-size: 14px;
+}
+
+.facebook {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 16px;
+    background: #1877f2;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.button {
+    display: block;
+    padding: 10px;
+    background: #3988c7;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.frame-box {
+    min-width: 0;
+    padding: 8px;
+    background: white;
+    border: 2px solid #9bc5e5;
+    border-radius: 8px;
+}
+
+iframe {
+    display: block;
+    width: 100%;
+    height: 650px;
+    border: 0;
+    background: white;
+}
+
+.derechos {
+    margin-top: 12px;
+    padding: 15px;
+    background: #204f7c;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 8px;
+    width: 100%;
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 7px;
+    }
+
+    header {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .logo {
+        width: 55px;
+        height: 60px;
+    }
+
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px;
+    }
+
+    nav a {
+        padding: 10px;
+        margin: 0;
+        font-size: 13px;
+    }
+
+    .lateral {
+        gap: 8px;
+    }
+
+    iframe {
+        height: 520px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="Pb logo.jpg" alt="Escudo del colegio">
+    </div>
+
+    <div>
+        <h1>Unidad Educativa Fiscal Provincia de Bolívar</h1>
+        <p>Limpieza que se nota, frescura que enamora.</p>
+    </div>
+</header>
+
+<div class="layout">
+
+    <aside class="lateral">
+
+        <nav>
+            <a href="Productos%20qu%C3%ADmicos.html" target="contenido">⌂ Inicio</a>
+            <a href="nosotros.html" target="contenido">▣ Nosotros</a>
+            <a href="servicios.html" target="contenido">⚙ Servicios</a>
+            <a href="noticias.html" target="contenido">▤ Noticias</a>
+            <a href="contacto.html" target="contenido">✉ Contacto</a>
+
+        </nav>
+
+        <section class="social">
+            <h3>Encuéntranos</h3>
+            <p>Síguenos en nuestras redes sociales.</p>
+
+            <a class="facebook"
+               href="https://www.facebook.com/ProvBolivar/?locale=es_LA"
+               target="_blank"
+               rel="noopener noreferrer">f</a>
+
+            <a class="button"
+               href="https://colegioprovinciabo.wixsite.com/provinciadebolivar"
+               target="_blank"
+               rel="noopener noreferrer">
+                Visítanos en nuestra página web
+            </a>
+        </section>
+
+    </aside>
+
+    <main class="frame-box">
+        <iframe
+            name="contenido"
+            src="Productos%20qu%C3%ADmicos.html"
+            title="Contenido de la página">
+        </iframe>
+    </main>
+
+</div>
+
+<footer class="derechos">
+    Unidad Educativa Provincia de Bolívar<br>
+    Todos los derechos reservados © 2026
+</footer>
+
+</body>
+</html>
